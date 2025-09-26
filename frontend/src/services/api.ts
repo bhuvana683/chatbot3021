@@ -1,9 +1,19 @@
-/* frontend/src/services/api.ts */
+/* frontend/src/services/api.ts 
 
 import axios from 'axios';
 
 const API = axios.create({
     baseURL: 'http://127.0.0.1:8000',
+});
+
+export default API;*/
+
+
+// frontend/src/services/api.ts
+import axios from 'axios';
+
+const API = axios.create({
+    baseURL: 'https://chatbot3021.onrender.com', // <-- change this
 });
 
 export default API;
