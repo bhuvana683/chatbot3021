@@ -16,7 +16,8 @@ app = FastAPI(title="Chatbot Platform")
 # ---------------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # frontend URL
+    allow_origins=["http://localhost:5173" ,
+                   "https://chatbot3021frontend.onrender.com"],  # frontend URL
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
