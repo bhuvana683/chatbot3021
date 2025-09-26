@@ -36,3 +36,16 @@ app.include_router(chat.router, prefix="/chat", tags=["Chat"])
 @app.get("/")
 def root():
     return {"message": "Chatbot Platform API is running"}
+
+# ---------------------------
+# Run the app (for local dev and Railway)
+# ---------------------------
+if __name__ == "__main__":
+    import uvicorn
+    import os
+
+    # Railway sets PORT environment variable; fallback to 8000 locally
+    port = int(os.environ.get("PORT", 8000))
+
+    # 0.0.0.0 allows external access (required for Railway)
+    uvicorn.run(app, host="0.0.0.0", port=port)
