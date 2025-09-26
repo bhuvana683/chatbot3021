@@ -21,7 +21,7 @@ export default function Chat() {
       const token = localStorage.getItem("token");
 
       // Send request to backend
-      const response = await fetch("http://127.0.0.1:8000/chat/", {
+      const response = await fetch("https://chatbot3021.onrender.com/chat/",{
         method: "POST",
         headers: {
           "Content-Type": "application/json",
