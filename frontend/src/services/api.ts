@@ -13,7 +13,7 @@ export default API;*/
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'https://chatbot3021.onrender.com', // <-- change this
+    baseURL: 'https://chatbot3021.onrender.com', 
 });
 
 export default API;
